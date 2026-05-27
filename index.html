@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="libs/mediapipe/camera_utils.js"></script>
+    <script src="libs/mediapipe/hands.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/rubik.css" />
+    <title>3D Image Cube - Camera & Gesture Control</title>
+  </head>
+
+  <body>
+    <video class="input_video" autoplay playsinline></video>
+
+    <div id="ui">
+      <div id="status-box">Đang khởi động Camera & 3D...</div>
+      <div class="instruction">
+        ✊ Nắm tay: Rubik | ✋ Xòe tay: Grid <br />
+        ☝️ 1 ngón: Chạm đổi ảnh | ✌️ 2 ngón: Vuốt ngang đổi ảnh
+      </div>
+    </div>
+
+    <div id="cursor"></div>
+
+    <script src="js/rubik.js"></script>
+  </body>
+</html>
