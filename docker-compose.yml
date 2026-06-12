@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  9router:
+    image: decolua/9router:latest
+    ports:
+      - "20128:20128"
+    environment:
+      - DATA_DIR=/app/data
+      - PORT=20128
+      - HOSTNAME=0.0.0.0
+      - NODE_ENV=production
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
